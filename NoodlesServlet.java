@@ -16,5 +16,8 @@ public class NoodlesServlet extends HttpServlet {
 		 if (vegetable == null) {
             vegetable = "Tomato";
         }
+		writer.println("<html><body>");
+        writer.println("<h1> Noodles with " + vegetable + "</h1>"); 
+        writer.println("</body></html>");
 	 }
 }
