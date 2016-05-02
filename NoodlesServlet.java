@@ -10,4 +10,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class NoodlesServlet extends HttpServlet {
+	 protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		  PrintWriter writer = response.getWriter();
+        String vegetable = request.getParameter("vegetable");
+		 if (vegetable == null) {
+            vegetable = "Tomato";
+        }
+	 }
 }
